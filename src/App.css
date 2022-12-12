@@ -1,17 +1,40 @@
 html,
 body {
   height: 100%;
+  font-family: "Courier New", monospace;
+  color: var(--color-third);
+  background-color: var(--color-primary);
 }
 
 .main {
-  padding-top: 60px;
+  padding-top: 100px;
   min-height: 80vh;
 }
 
 .header {
-  background-color: red;
+  background-color: var(--color-secondary);
   top: 0;
   height: 60px;
   width: 100%;
   position: fixed;
+}
+
+.header-content {
+  display: flex;
+  justify-content: left;
+  padding-top: 10px;
+}
+
+.header-content .MuiButton-root {
+  color: var(--color-third);
+}
+
+.header-content .MuiButton-root:hover {
+  color: var(--color-third);
+}
+
+.idioma {
+  width: 5%;
+  background-color: transparent;
+  appearance: auto;
 }
