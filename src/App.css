@@ -5,3 +5,40 @@ body {
   color: var(--color-text);
   background-color: var(--color-background);
 }
+
+.header-content {
+  display: flex;
+  justify-content: left;
+  gap: 70px;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.idioma {
+  width: 70px;
+  background-color: transparent;
+  border: black 1px solid;
+}
+
+@media only screen and (max-width: 799px) {
+  /* Estilos para pantallas menores a 400px */
+  .header {
+    display: none;
+  }
+  .bottom {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  /* Estilos para pantallas menores a 400px */
+  .header {
+    display: block;
+  }
+  .bottom {
+    display: none;
+  }
+}

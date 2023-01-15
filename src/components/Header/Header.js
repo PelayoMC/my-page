@@ -1,37 +1,15 @@
 import i18n from "i18next";
 import "./Header.css";
-import { Link, useLocation } from "react-router-dom";
-import Button from "@mui/material/Button";
+import ButtonHeader from "./ButtonHeader/ButtonHeader";
 
 function Header() {
-  const location = useLocation();
-
-  const style = {
-    backgroundColor: "transparent",
-    borderBottom: "2px solid black",
-    opacity: 1,
-  };
-
-  const checkStyle = (url) => (location.pathname === url ? style : {});
-
   return (
     <div className="container header">
       <nav className="header-content">
-        <Button style={checkStyle("/")} variant="text" component={Link} to={""}>
-          Main
-        </Button>
-        <Button style={checkStyle("/about")} variant="text" component={Link} to={"about"}>
-          About
-        </Button>
-        <Button style={checkStyle("/studies")} variant="text" component={Link} to={"studies"}>
-          Studies
-        </Button>
-        <Button style={checkStyle("/work")} variant="text" component={Link} to={"work"}>
-          Work
-        </Button>
-        <Button style={checkStyle("/contact")} variant="text" component={Link} to={"contact"}>
-          Contact
-        </Button>
+        <ButtonHeader url="" text="Intro"></ButtonHeader>
+        <ButtonHeader url="studies" text="Studies"></ButtonHeader>
+        <ButtonHeader url="work" text="Work"></ButtonHeader>
+        <ButtonHeader url="contact" text="Contact"></ButtonHeader>
         <select
           className="idioma form-select form-select-sm ms-auto me-3"
           aria-label="Default select example"
