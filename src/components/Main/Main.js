@@ -7,6 +7,7 @@ function Main() {
       <div className="container animate__animated animate__fadeIn">
         <h1>{t("intro.titulo")}</h1>
         <p>{t("intro.texto")}</p>
+        <p>{t("intro.texto2")}</p>
       </div>
     </div>
   );

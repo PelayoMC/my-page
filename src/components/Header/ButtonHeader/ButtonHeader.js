@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import Button from "@mui/material/Button";
 import "./ButtonHeader.css";
